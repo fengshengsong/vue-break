@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>index</title>
+</head>
+<body>
+    <div id="app">
+        <input id="i" type="text" v-model="some" />
+        {{some}}
+    </div>
+
+
+    <script src="./observer.js"></script>
+
+
+    <script>
+        var options = {
+            el:'app',
+            data:{
+                some:'hello'
+            }
+        };
+        var vb = new VueBreak(options);
+    </script>
+</body>
+</html>
